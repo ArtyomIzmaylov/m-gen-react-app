@@ -1,25 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useState} from 'react';
 import './App.css';
+import Main from "./pages/Main";
+import Sidebar from "./components/Sidebar/Sidebar";
+import {BrowserRouter, Route, Router, Routes} from "react-router-dom";
+import Navbar from "./components/Navbar/Navbar";
+import Settings from "./pages/Settings";
 
 function App() {
+    const [showModal, setShowModal] = useState(false);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className='container-fluid'>
+          <BrowserRouter>
+              <Navbar handleShow={() => setShowModal(true)}></Navbar>
+                      <Routes>
+                          <Route path="/home" element={<Main show={showModal} handleClose={() => setShowModal(false)}/>} />
+                          <Route path="/settings" element={<Settings/>} />
+                          <Route path="/home" element={<Main show={showModal} handleClose={() => setShowModal(false)}/>} />
+                          <Route path="/home" element={<Main show={showModal} handleClose={() => setShowModal(false)}/>} />
+                      </Routes>
+          </BrowserRouter>
+      </div>
   );
 }
 
