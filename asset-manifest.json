@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/m-gen-react-app/static/css/main.f51cd021.css",
-    "main.js": "/m-gen-react-app/static/js/main.97e8c1f7.js",
+    "main.js": "/m-gen-react-app/static/js/main.95849be4.js",
     "index.html": "/m-gen-react-app/index.html",
     "main.f51cd021.css.map": "/m-gen-react-app/static/css/main.f51cd021.css.map",
-    "main.97e8c1f7.js.map": "/m-gen-react-app/static/js/main.97e8c1f7.js.map"
+    "main.95849be4.js.map": "/m-gen-react-app/static/js/main.95849be4.js.map"
   },
   "entrypoints": [
     "static/css/main.f51cd021.css",
-    "static/js/main.97e8c1f7.js"
+    "static/js/main.95849be4.js"
   ]
 }
