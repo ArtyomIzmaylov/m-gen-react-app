@@ -14,7 +14,7 @@ const Settings = () => {
                         <h6>Пациент</h6>
                     </div>
                 </div>
-                <div className="col-6 mt-sm-3 mb-sm-3 container d-flex flex-column justify-content-between">
+                <div className="col-6 mt-sm-3 mb-sm-3 container d-flex flex-column justify-content-sm-around">
                     <div className="input-group">
                         <input type="text" className="form-control" placeholder="Имя пациента" aria-label="Username" aria-describedby="input-group-right"/>
                         <span className="input-group-text" id="input-group-right-example"></span>
